@@ -3,6 +3,7 @@
 - !group
   - !include whoami.yaml
 - !group
+  - !slide Why is crypto hard?
   - !slide
     html_class: wason
     content: |
@@ -40,18 +41,20 @@
   - !slide Trust Computers?
   - !slide
     content: |
-      (Traceroute goes here)
+      !tracepath.png!
     notes: |
       Every one of these lines is a device between me and that server.
       Every device is at least one person who could look at my communications if I wanted.
   - !slide
     content: |
-      (Wireshark screenshot)
+      !ws-capture.png!
     notes: |
       Free tool, use on any network, see all the traffic
-  - !slide (TCP stream follow)
+  - !slide |
+    !ws-follow-stream.png!
   - !slide
-    content: (TCP stream + highlight)
+    content: |
+      !ws-follow-stream-highlight.png!
     notes: There's the admin password of a Rails app
   - !slide
     content: |
@@ -108,8 +111,7 @@
   - !slide |
     (Server cert signing)
   - !slide |
-    (openssl req screenshot)
-
+    !openssl-req.png!
   - !slide |
     !TLS-2.jpg!
   - !slide Can we whisper?
@@ -134,3 +136,5 @@
 - !group
   - !slide |
     Bonus material: RSA
+  - !slide |
+    Bonus material: Live Wireshark
