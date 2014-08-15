@@ -1,0 +1,19 @@
+@import 'compass'
+@import 'animate/windblown'
+
+.wason.slide
+  font-size: 5vh
+
+.slide img
+  max-height: 69vh
+
+.root.moving
+  &.by-slide
+    &.forwards
+      .group.img-reveal
+        .slide.previous.am-at
+          +animation(none)
+    &.backwards
+      .group.img-reveal
+        .slide.next.am-at
+          +animation(none)

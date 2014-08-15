@@ -38,6 +38,10 @@
       *(2) Why do you want it?
       *(3) Can I whisper it?
   - !slide Computers
+  - !slide
+    content: |
+      !cc-entry.png!
+    notes: Who are you? Can I whisper it?
   - !slide Trust Computers?
   - !slide
     content: |
@@ -50,84 +54,167 @@
       !ws-capture.png!
     notes: |
       Free tool, use on any network, see all the traffic
-  - !slide |
-    !ws-follow-stream.png!
-  - !slide
-    content: |
-      !ws-follow-stream-highlight.png!
-    notes: There's the admin password of a Rails app
+  - !group
+    html_class: img-reveal
+    slides:
+      - !slide |
+        !ws-follow-stream.png!
+      - !slide
+        content: |
+          !ws-follow-stream-highlight.png!
+        notes: There's the admin password of a Rails app
   - !slide
     content: |
       Minimize Trust
     notes: |
       The purpose of crypto is to minimize the amount of trust required between actors
       and the number of people that need to be trusted
-
-  - !slide Purpose of talk
-  - !slide Instill Complete Paranoia
+- !group
+  - !slide |
+    Things worth securing
+    in Web Applications
+  - !slide Credit card numbers
+  - !slide Personally identifying information
+  - !slide Authentication credentials
+  - !slide Session data
+  - !slide ...Everything
 
 - !group
   - !slide Ciphers
+  - !group
+    html_class: img-reveal
+    slides:
+    - !slide |
+      !alice-bob.svg!
+    - !slide |
+      !alice-bob-eve.svg!
+    - !slide |
+      !alice-bob-enc.svg!
   - !slide |
-    !alice-to-bob.jpg!
-  - !slide |
-    !alice-to-bob-enc.jpg!
-  - !slide |
-    !symmetric-enc.jpg!
-  - !slide |
-    !caeser-cipher.jpg!
+    !symmetric-encryption.svg!
+  - !group
+    html_class: img-reveal
+    slides:
+    - !slide |
+      !caeser-cipher-3.svg!
+    - !slide |
+      !caeser-cipher-2.svg!
+    - !slide |
+      !caeser-cipher-1.svg!
+    - !slide |
+      !caeser-cipher-0.svg!
   - !slide |
     !aes_enc.png!
   - !slide |
-    !alice-to-bob.jpg!
+    !alice-bob-key.svg!
 - !group
   - !slide |
     Transport Layer Security
     (TLS)
 
-  - !slide |
-    !TLS-6.jpg!
-  - !slide
-    content: |
-      !TLS-5.jpg!
-    notes: Stripped down explaination - the usual path
-  - !slide |
-    !TLS-4.jpg!
-  - !slide |
-    !TLS-3.jpg!
+  - !group
+    html_class: img-reveal
+    slides:
+      - !slide |
+        !TLS-6.jpg!
+      - !slide
+        content: |
+          !TLS-5.jpg!
+        notes: Stripped down explaination - the usual path
+      - !slide |
+        !TLS-4.jpg!
+      - !slide |
+        !TLS-3.jpg!
   - !slide Certificate?
   - !slide Who are you?
-  - !slide
-    content: |
-      !symmetric-enc.jpg!
-    notes: |
-      Remember the problem with sending keys in a cipher?
-  - !slide |
-    !asymmetric-enc.jpg!
+  - !group
+    html_class: img-reveal
+    slides:
+    - !slide
+      content: |
+        !symmetric-encryption.svg!
+      notes: |
+        Remember the problem with sending keys in a cipher?
+    - !slide |
+      !asymmetric-encryption.svg!
   - !slide RSA
-  - !slide Signing
+  - !slide
+    content: Signing
+    notes: So now we're ready to talk about signing certificates
   - !slide |
-    !asymmetric-enc.jpg!
-  - !slide |
-    (Server cert signing)
+    !asymmetric-encryption.svg!
+  - !group
+    html_class: img-reveal
+    slides:
+      - !slide |
+        !certificate-signing-6.svg!
+      - !slide |
+        !certificate-signing-5.svg!
+      - !slide |
+        !certificate-signing-4.svg!
+      - !slide |
+        !certificate-signing-2.svg!
+      - !slide |
+        !certificate-signing-1.svg!
+      - !slide |
+        !certificate-signing-0.svg!
   - !slide |
     !openssl-req.png!
   - !slide |
     !TLS-2.jpg!
   - !slide Can we whisper?
   - !group
+    - !slide
+      content: |
+        !symmetric-encryption.svg!
+      notes: |
+        Different approach to this problem
     - !slide Diffie-Hellman Key Exchange
     - !slide Produce a secret key in the clear
     - !slide Magic!
+  - !group
+    html_class: img-reveal
+    slides:
+      - !slide |
+        !dhke-8.svg!
+      - !slide |
+        !dhke-7.svg!
+      - !slide |
+        !dhke-6.svg!
+      - !slide |
+        !dhke-4.svg!
+      - !slide |
+        !dhke-3.svg!
+      - !slide |
+        !dhke-2.svg!
+      - !slide |
+        !dhke-1.svg!
+      - !slide |
+        !dhke-0.svg!
+  - !group
+    html_class: img-reveal
+    slides:
     - !slide |
-      !dhke.jpg!
-  - !slide |
-    !TLS-1.jpg!
-  - !slide |
-    !TLS-0.jpg!
-  - !slide Client auth?
+      !TLS-1.jpg!
+    - !slide |
+      !TLS-0.jpg!
+    - !slide Client auth?
 
 - !group
+  - !slide Why not use TLS?
+  - !slide It's expensive
+  - !slide -It's expensive-
+  - !slide It's complex
+  - !slide -It's complex-
+  - !slide It's not familiar
+  - !slide -It's not familiar-
+
+- !group
+  - !slide |
+    * References
+    * RFC 5246
+    * https://bettercrypto.org/
+    * http://cryptopals.com/
   - !slide
     Thanks!
   - !slide
