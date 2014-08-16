@@ -54,15 +54,10 @@
       !ws-capture.png!
     notes: |
       Free tool, use on any network, see all the traffic
-  - !group
-    html_class: img-reveal
-    slides:
-      - !slide |
-        !ws-follow-stream.png!
-      - !slide
-        content: |
-          !ws-follow-stream-highlight.png!
-        notes: There's the admin password of a Rails app
+  - !slide
+    content: |
+      !ws-follow-stream-highlight.png!
+    notes: There's the admin password of a Rails app
   - !slide
     content: |
       Minimize Trust

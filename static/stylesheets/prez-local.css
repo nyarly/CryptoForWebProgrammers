@@ -1,0 +1,14 @@
+.wason.slide {
+  font-size: 5vh; }
+
+.slide img {
+  max-height: 69vh; }
+
+.root.moving.by-slide.forwards .group.img-reveal .slide.previous.am-at {
+  -moz-animation: none;
+  -webkit-animation: none;
+  animation: none; }
+.root.moving.by-slide.backwards .group.img-reveal .slide.next.am-at {
+  -moz-animation: none;
+  -webkit-animation: none;
+  animation: none; }

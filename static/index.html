@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1024">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Presentation</title>
+
+    <meta name="description" content="A nifty presentation made with Rhet Butler">
+    <meta name="author" content="Judson Lester">
+
+    <script src="javascript/rhet-present.js"></script>
+    <script src="javascript/keyboard-nav.js"></script>
+    <link href="stylesheets/google-open-sans.css" rel="stylesheet">
+<link href="stylesheets/rhet.css" rel="stylesheet">
+<link href="stylesheets/prez-local.css" rel="stylesheet">
+<link href="stylesheets/highlight/solarized_dark.css" rel="stylesheet">
+
+    <script type="text/javascript" src="assets/javascript/sockjs-0.2.1.js"></script>
+<script src="assets/javascript/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+  </head>
+
+  <body id="presentation">
+    <div class="rhet-butler root">
+      
+        <div class="rhet-butler slide    ">
+  <p>Cryptography for Web Programmers</p>
+</div>
+
+      
+        <div class="rhet-butler group">
+  
+    <div id="whoami" class="rhet-butler slide    ">
+  <p>Judson Lester</p>
+</div>
+
+  
+    <div class="rhet-butler slide    ">
+  <p>@judsonlester</p>
+</div>
+
+  
+    <div class="rhet-butler slide    ">
+  <p>github.com/nyarly</p>
+</div>
+
+  
+    <div class="rhet-butler slide    ">
+  <p><img src="madhelm.png" alt=""></p>
+</div>
+
+  
+    <div class="rhet-butler slide    ">
+  <p><img src="lrdesign-logo.png" alt=""></p>
+</div>
+
+  
+</div>
+
+      
+        <div class="rhet-butler group">
+  
+    <div class="rhet-butler slide    ">
+  <p>Why is crypto hard?</p>
+</div>
+
+  
+    <div class="rhet-butler slide wason    ">
+  <p><img src="Wason_cards1.svg" alt=""><br>
+vowel → even</p>
+</div>
+
+  
+    <div class="rhet-butler slide wason    ">
+  <p><img src="Wason_cards2.svg" alt=""><br>
+Only adults are allowed to drink alcohol</p>
+</div>
+
+  
+</div>
+
+      
+        <div class="rhet-butler group">
+  
+    <div class="rhet-butler slide    ">
+  <p>Trust</p>
+</div>
+
+  
+    <div class="rhet-butler slide    ">
+  <ul>
+	<li>Tell me your credit card number</li>
+	<li class="rhet-butler item cue-1">Who are you?</li>
+	<li class="rhet-butler item cue-2">Why do you want it?</li>
+	<li class="rhet-butler item cue-3">Can I whisper it?</li>
+</ul>
+</div>
+
+  
+    <div class="rhet-butler slide    ">
+  <p>Computers</p>
+</div>
+
+  
+    <div class="rhet-butler slide    ">
+  <p><img src="cc-entry.png" alt=""></p>
+</div>
+
+  
+    <div class="rhet-butler slide    ">
+  <p>Trust Computers?</p>
+</div>
+
+  
+    <div class="rhet-butler slide    ">
+  <p><img src="tracepath.png" alt=""></p>
+</div>
+
+  
+    <div class="rhet-butler slide    ">
+  <p><img src="ws-capture.png" alt=""></p>
+</div>
+
+  
+    <div class="rhet-butler slide    ">
+  <p><img src="ws-follow-stream-highlight.png" alt=""></p>
+</div>
+
+  
+    <div class="rhet-butler slide    ">
+  <p>Minimize Trust</p>
+</div>
+
+  
+</div>
+
+      
+        <div class="rhet-butler group">
+  
+    <div class="rhet-butler slide    ">
+  <p>Things worth securing<br>
+in Web Applications</p>
+</div>
+
+  
+    <div class="rhet-butler slide    ">
+  <p>Credit card numbers</p>
+</div>
+
+  
+    <div class="rhet-butler slide    ">
+  <p>Personally identifying information</p>
+</div>
+
+  
+    <div class="rhet-butler slide    ">
+  <p>Authentication credentials</p>
+</div>
+
+  
+    <div class="rhet-butler slide    ">
+  <p>Session data</p>
+</div>
+
+  
+    <div class="rhet-butler slide    ">
+  <p>…Everything</p>
+</div>
+
+  
+</div>
+
+      
+        <div class="rhet-butler group">
+  
+    <div class="rhet-butler slide    ">
+  <p>Ciphers</p>
+</div>
+
+  
+    <div class="rhet-butler group img-reveal">
+  
+    <div class="rhet-butler slide    ">
+  <p><img src="alice-bob.svg" alt=""></p>
+</div>
+
+  
+    <div class="rhet-butler slide    ">
+  <p><img src="alice-bob-eve.svg" alt=""></p>
+</div>
+
+  
+    <div class="rhet-butler slide    ">
+  <p><img src="alice-bob-enc.svg" alt=""></p>
+</div>
+
+  
+</div>
+
+  
+    <div class="rhet-butler slide    ">
+  <p><img src="symmetric-encryption.svg" alt=""></p>
+</div>
+
+  
+    <div class="rhet-butler group img-reveal">
+  
+    <div class="rhet-butler slide    ">
+  <p><img src="caeser-cipher-3.svg" alt=""></p>
+</div>
+
+  
+    <div class="rhet-butler slide    ">
+  <p><img src="caeser-cipher-2.svg" alt=""></p>
+</div>
+
+  
+    <div class="rhet-butler slide    ">
+  <p><img src="caeser-cipher-1.svg" alt=""></p>
+</div>
+
+  
+    <div class="rhet-butler slide    ">
+  <p><img src="caeser-cipher-0.svg" alt=""></p>
+</div>
+
+  
+</div>
+
+  
+    <div class="rhet-butler slide    ">
+  <p><img src="aes_enc.png" alt=""></p>
+</div>
+
+  
+    <div class="rhet-butler slide    ">
+  <p><img src="alice-bob-key.svg" alt=""></p>
+</div>
+
+  
+</div>
+
+      
+        <div class="rhet-butler group">
+  
+    <div class="rhet-butler slide    ">
+  <p>Transport Layer Security<br>
+(<span class="caps">TLS</span>)</p>
+</div>
+
+  
+    <div class="rhet-butler group img-reveal">
+  
+    <div class="rhet-butler slide    ">
+  <p><img src="TLS-6.jpg" alt=""></p>
+</div>
+
+  
+    <div class="rhet-butler slide    ">
+  <p><img src="TLS-5.jpg" alt=""></p>
+</div>
+
+  
+    <div class="rhet-butler slide    ">
+  <p><img src="TLS-4.jpg" alt=""></p>
+</div>
+
+  
+    <div class="rhet-butler slide    ">
+  <p><img src="TLS-3.jpg" alt=""></p>
+</div>
+
+  
+</div>
+
+  
+    <div class="rhet-butler slide    ">
+  <p>Certificate?</p>
+</div>
+
+  
+    <div class="rhet-butler slide    ">
+  <p>Who are you?</p>
+</div>
+
+  
+    <div class="rhet-butler group img-reveal">
+  
+    <div class="rhet-butler slide    ">
+  <p><img src="symmetric-encryption.svg" alt=""></p>
+</div>
+
+  
+    <div class="rhet-butler slide    ">
+  <p><img src="asymmetric-encryption.svg" alt=""></p>
+</div>
+
+  
+</div>
+
+  
+    <div class="rhet-butler slide    ">
+  <p><span class="caps">RSA</span></p>
+</div>
+
+  
+    <div class="rhet-butler slide    ">
+  <p>Signing</p>
+</div>
+
+  
+    <div class="rhet-butler slide    ">
+  <p><img src="asymmetric-encryption.svg" alt=""></p>
+</div>
+
+  
+    <div class="rhet-butler group img-reveal">
+  
+    <div class="rhet-butler slide    ">
+  <p><img src="certificate-signing-6.svg" alt=""></p>
+</div>
+
+  
+    <div class="rhet-butler slide    ">
+  <p><img src="certificate-signing-5.svg" alt=""></p>
+</div>
+
+  
+    <div class="rhet-butler slide    ">
+  <p><img src="certificate-signing-4.svg" alt=""></p>
+</div>
+
+  
+    <div class="rhet-butler slide    ">
+  <p><img src="certificate-signing-2.svg" alt=""></p>
+</div>
+
+  
+    <div class="rhet-butler slide    ">
+  <p><img src="certificate-signing-1.svg" alt=""></p>
+</div>
+
+  
+    <div class="rhet-butler slide    ">
+  <p><img src="certificate-signing-0.svg" alt=""></p>
+</div>
+
+  
+</div>
+
+  
+    <div class="rhet-butler slide    ">
+  <p><img src="openssl-req.png" alt=""></p>
+</div>
+
+  
+    <div class="rhet-butler slide    ">
+  <p><img src="TLS-2.jpg" alt=""></p>
+</div>
+
+  
+    <div class="rhet-butler slide    ">
+  <p>Can we whisper?</p>
+</div>
+
+  
+    <div class="rhet-butler group">
+  
+    <div class="rhet-butler slide    ">
+  <p><img src="symmetric-encryption.svg" alt=""></p>
+</div>
+
+  
+    <div class="rhet-butler slide    ">
+  <p>Diffie-Hellman Key Exchange</p>
+</div>
+
+  
+    <div class="rhet-butler slide    ">
+  <p>Produce a secret key in the clear</p>
+</div>
+
+  
+    <div class="rhet-butler slide    ">
+  <p>Magic!</p>
+</div>
+
+  
+</div>
+
+  
+    <div class="rhet-butler group img-reveal">
+  
+    <div class="rhet-butler slide    ">
+  <p><img src="dhke-8.svg" alt=""></p>
+</div>
+
+  
+    <div class="rhet-butler slide    ">
+  <p><img src="dhke-7.svg" alt=""></p>
+</div>
+
+  
+    <div class="rhet-butler slide    ">
+  <p><img src="dhke-6.svg" alt=""></p>
+</div>
+
+  
+    <div class="rhet-butler slide    ">
+  <p><img src="dhke-4.svg" alt=""></p>
+</div>
+
+  
+    <div class="rhet-butler slide    ">
+  <p><img src="dhke-3.svg" alt=""></p>
+</div>
+
+  
+    <div class="rhet-butler slide    ">
+  <p><img src="dhke-2.svg" alt=""></p>
+</div>
+
+  
+    <div class="rhet-butler slide    ">
+  <p><img src="dhke-1.svg" alt=""></p>
+</div>
+
+  
+    <div class="rhet-butler slide    ">
+  <p><img src="dhke-0.svg" alt=""></p>
+</div>
+
+  
+</div>
+
+  
+    <div class="rhet-butler group img-reveal">
+  
+    <div class="rhet-butler slide    ">
+  <p><img src="TLS-1.jpg" alt=""></p>
+</div>
+
+  
+    <div class="rhet-butler slide    ">
+  <p><img src="TLS-0.jpg" alt=""></p>
+</div>
+
+  
+    <div class="rhet-butler slide    ">
+  <p>Client auth?</p>
+</div>
+
+  
+</div>
+
+  
+</div>
+
+      
+        <div class="rhet-butler group">
+  
+    <div class="rhet-butler slide    ">
+  <p>Why not use <span class="caps">TLS</span>?</p>
+</div>
+
+  
+    <div class="rhet-butler slide    ">
+  <p>It’s expensive</p>
+</div>
+
+  
+    <div class="rhet-butler slide    ">
+  <p><del>It’s expensive</del></p>
+</div>
+
+  
+    <div class="rhet-butler slide    ">
+  <p>It’s complex</p>
+</div>
+
+  
+    <div class="rhet-butler slide    ">
+  <p><del>It’s complex</del></p>
+</div>
+
+  
+    <div class="rhet-butler slide    ">
+  <p>It’s not familiar</p>
+</div>
+
+  
+    <div class="rhet-butler slide    ">
+  <p><del>It’s not familiar</del></p>
+</div>
+
+  
+</div>
+
+      
+        <div class="rhet-butler group">
+  
+    <div class="rhet-butler slide    ">
+  <ul>
+	<li>References</li>
+	<li>
+<span class="caps">RFC</span> 5246</li>
+	<li>https://bettercrypto.org/</li>
+	<li>http://cryptopals.com/</li>
+</ul>
+</div>
+
+  
+    <div class="rhet-butler slide    ">
+  <p>Thanks!</p>
+</div>
+
+  
+    <div class="rhet-butler slide    ">
+  <p>Q &amp; A</p>
+</div>
+
+  
+</div>
+
+      
+        <div class="rhet-butler group">
+  
+    <div class="rhet-butler slide    ">
+  <p>Bonus material: <span class="caps">RSA</span></p>
+</div>
+
+  
+    <div class="rhet-butler slide    ">
+  <p>Bonus material: Live Wireshark</p>
+</div>
+
+  
+</div>
+
+      
+    </div>
+
+    <div class="hint">
+      <p id="mouse-hint">Use a spacebar or arrow keys to navigate</p>
+      <p id="touch-hint" style="display:none">Tap on the left or right to navigate</p>
+    </div>
+
+    <script type="text/javascript">
+  var sock = new SockJS("/live/follower");
+
+  sock.onopen = function() {
+    console.log("open");
+  };
+
+  sock.onmessage = function(e) {
+    console.log("message", e.data);
+    presenter.moveTo(e.data);
+  };
+
+  sock.onclose = function() {
+    console.log("close");
+  };
+</script>
+
+    <script>
+        var presenter = new rhetButler.Presenter(document, window);
+        presenter.setup("presentation");
+        setupUserInterface(presenter);
+    </script>
+
+  </body>
+</html>
