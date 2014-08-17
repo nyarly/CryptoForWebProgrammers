@@ -7,13 +7,33 @@
 .slide img
   max-height: 69vh
 
+.slide.strict-block
+  display: block
+
+  *
+    display: block
+
+.slide svg
+  max-width: 100%
+  max-height: 100%
+  width: 100%
+  height: 100%
+
+.notes
+  p
+    font-size: 50%
+
 .root.moving
   &.by-slide
     &.forwards
       .group.img-reveal
         .slide.previous.am-at
           +animation(none)
+        .slide.previous.am-at:last-child
+          +animation(windblownOut .5s ease)
     &.backwards
       .group.img-reveal
         .slide.next.am-at
           +animation(none)
+        .slide.next.am-at:last-child
+          +animation(windblownIn .5s ease)

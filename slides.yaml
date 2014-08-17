@@ -76,15 +76,11 @@
 
 - !group
   - !slide Ciphers
-  - !group
-    html_class: img-reveal
-    slides:
-    - !slide |
-      !alice-bob.svg!
-    - !slide |
-      !alice-bob-eve.svg!
-    - !slide |
-      !alice-bob-enc.svg!
+  - !slide
+    html_class: strict-block
+    content: !embed
+      source: alice-bob-enc.svg
+      filters: [ !cues ]
   - !slide |
     !symmetric-encryption.svg!
   - !group
